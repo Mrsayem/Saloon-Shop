@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="showcase">
+        <h1 class="logo">X-Saloon</h1>
+        <div class="text">
+            <h1 class="bigtext">Welcome to X saloon</h1>
+            <h3 class="smalltext">Better than anyone</h3>
+        </div>
+        <div class="btn-area">
+            <a href="#">Make an appointment</a>
+            <a href="#">Call Us</a>
+        </div>
+    </section>
+    <div class="menubar">
+        <img src="./img/hamburg.png" alt="">
+    </div>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Career</li>
+            <li>Help</li>
+        </ul>
+    </div>
+</body>
+<script>
+    var menuBar = document.querySelector('.menubar');
+    var navBar = document.querySelector('.navbar');
+    menuBar.addEventListener('click',()=>{
+        if(navBar.style.right=="-250px")
+        {
+            navBar.style.right=0;
+        }
+        else
+        {
+            navBar.style.right="-250px";
+        }
+    })
+</script>
+</html>
